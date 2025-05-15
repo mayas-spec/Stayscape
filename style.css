@@ -1,0 +1,114 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.2rem;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+nav button {
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#Hero {
+  background-image: url("./assets/seaview.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: auto;
+}
+.Overlay {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+.Overlay h1 {
+  font-size: 3rem;
+}
+.Overlay p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.Overlay button {
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 1rem;
+}
+#Search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  margin-top: -10rem;
+}
+
+#SearchBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: white;
+  box-shadow: 5px 5px whitesmoke;
+}
+#search-title span {
+  padding: 2rem;
+  background-color: burlywood;
+  font-size: 20px;
+  color: white;
+}
+#search-title span:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+
+#SearchBox div {
+  padding: 2rem;
+  border-right: 1px solid whitesmoke;
+}
+
+#SearchBox p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+#SearchBox span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+#SearchBox i {
+  color: black;
+}
+#SearchBox input {
+  border: none;
+}
+#SearchBox input::placeholder {
+  color: red;
+}
+
+#SearchBox button {
+  background-color: red;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
