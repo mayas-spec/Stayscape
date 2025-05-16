@@ -231,7 +231,6 @@ nav {
 }
 .location-card {
   padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
   text-align: center;
 }
 
@@ -258,5 +257,14 @@ nav {
   height: auto;  
   max-width: 100%;  
   display: block;  
+}
+
+#property-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  padding: 20px;
+  column-gap: 1rem;
 }
 
