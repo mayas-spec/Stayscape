@@ -1,114 +1,262 @@
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+  }
+
+  #Logo{
+    font-weight: bolder;
+    font-style: italic;
+    padding: 1rem;
+    font-size: 32px;
+  }
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.2rem;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  #Hero {
+    background-image: url(Assets/seaview.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .Overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-size: 20px;
+  }
+
+  .Overlay h1 {
+    font-size: 3rem;
+  }
+  .Overlay p {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .Overlay button {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+
+  #Search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top: -10rem;
+  }
+  
+  #SearchBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    box-shadow: 5px 5px whitesmoke;
+    
+  }
+  #search-title span {
+    padding: 2rem;
+    background-color: burlywood;
+    font-size: 20px;
+    color: white;
+  }
+
+  #search-title span:nth-child(2) {
+    background-color: white;
+    color: black;
+  }
+  
+  #SearchBox div {
+    padding: 2rem;
+    border-right: 1px solid whitesmoke;
+  }
+  
+  #SearchBox p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+  }
+
+  #SearchBox span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+  }
+
+  #SearchBox i {
+    color: black;
+  }
+
+  #SearchBox input {
+    border: none;
+  }
+
+
+  #SearchBox input:focus {
+    outline: none;
+  }
+
+
+  #SearchBox input::placeholder {
+    color: gray;
+  }
+  
+  #SearchBox button {
+    background-color: burlywood;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: -2rem;
+    cursor: pointer;
+  }
+
+  .Category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 8rem;
 }
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  column-gap: 1.2rem;
-  text-transform: uppercase;
-  font-size: 20px;
+
+.Subtitle{
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:burlywood;
 }
-nav button {
-  background-color: red;
-  color: white;
-  border: none;
-  font-size: 20px;
-  text-transform: uppercase;
+
+.title{
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+
+#CategoryBox p{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+#CategoryBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #F3F5F1;
+    padding: 10px;
+    border: none;
+    column-gap: 1rem;
+
+}
+
+#CategoryBox div{
+    padding: 2rem;
+    border-right: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+#CategoryBox span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3rem;
+    
+  }
+
+  #CategoryBox i {
+    color: black;
+  }
+ 
+  #CategoryBox div:hover {
+    background-color: goldenrod;
+    transform: scale(1.05);
+  }
+  
+  #CategoryBox div p, 
+  #CategoryBox div span i {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+
+  #CategoryBox div:nth-child(1){
+    border: 2px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+
+  #CategoryBox div:nth-child(2){
+    border: 2px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+
+  #CategoryBox div:nth-child(3){
+    border: 2px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+
+  #CategoryBox div:nth-child(4){
+    border: 2px solid whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+}
+.location-card {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.location-name {
+  font-size: 18px;
+  font-weight: bold;
+ margin-bottom: 10px;
+ font-style: oblique;
+}
+
+
+.property-count {
+  background-color: #f5f5f5;
   padding: 10px 20px;
-  border-radius: 10px;
-}
-#Hero {
-  background-image: url("./assets/seaview.jpg");
-  height: 100vh;
-  background-position: center;
-  background-size: auto;
-}
-.Overlay {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(0, 0, 0, 0.5);
-  font-size: 20px;
-}
-.Overlay h1 {
-  font-size: 3rem;
-}
-.Overlay p {
-  font-style: italic;
+  border-radius: 5px;
+  display: inline-block;
+  color: goldenrod;
+  font-size: 18px;
   font-weight: bold;
 }
 
-.Overlay button {
-  background-color: red;
-  color: white;
-  border: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 1rem;
-}
-#Search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 2rem;
-  margin-top: -10rem;
+.small-image {
+  width: 150px; 
+  height: auto;  
+  max-width: 100%;  
+  display: block;  
 }
 
-#SearchBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: white;
-  box-shadow: 5px 5px whitesmoke;
-}
-#search-title span {
-  padding: 2rem;
-  background-color: burlywood;
-  font-size: 20px;
-  color: white;
-}
-#search-title span:nth-child(2) {
-  background-color: white;
-  color: black;
-}
-
-#SearchBox div {
-  padding: 2rem;
-  border-right: 1px solid whitesmoke;
-}
-
-#SearchBox p {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 0.2rem;
-}
-#SearchBox span {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 5px;
-}
-#SearchBox i {
-  color: black;
-}
-#SearchBox input {
-  border: none;
-}
-#SearchBox input::placeholder {
-  color: red;
-}
-
-#SearchBox button {
-  background-color: red;
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-}
